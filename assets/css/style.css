@@ -46,6 +46,7 @@ nav {
     -webkit-box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
     -moz-box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
     box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
+    padding: 3rem;
 }
 
 #top #text-headings {
@@ -124,7 +125,7 @@ footer ul {
     grid-column: 9/13;
 }
 
-@media screen and (max-width: 982px) {
+@media screen and (max-width: 1014px) {
     #container > *{
         width: 100%;
     }
