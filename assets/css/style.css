@@ -5,12 +5,14 @@
 body {
     background-color: #f2c4bd;
     font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #container {
     display: grid;
     margin: 0 auto;
-    grid-auto-rows: min-content;
+    /* grid-auto-rows: min-content; */
     gap: 30px;
 }
 
@@ -49,24 +51,39 @@ nav {
     padding: 3rem;
 }
 
-#top #text-headings {
-    justify-self: end;
+#text-headings {
     grid-column: 1/3;
+    /* text-align: center; */
 }
 
 #headings img {
-    width: 200px;
+    max-width: 200px;
     border-radius: 50%;
+    -webkit-box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
+    box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
+    margin-bottom: 2rem;
 }
 
 h1 {
     font-size: 3.0rem;
+    font-weight: 600;
     margin: 0;
 }
 
 #description {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 3rem;
+    column-gap: 20px;
+}
+
+#description > * {
+    border-radius: 20px;
+    padding: 2rem;
+    -webkit-box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
+    box-shadow: 13px 21px 30px 3px rgba(0,0,0,0.2);
 }
 
 #engage-visitors {
@@ -132,6 +149,16 @@ footer ul {
 }
 
 @media screen and (max-width: 767px) {
+    #text-headings {
+        grid-column: 1/4;
+        text-align: center;
+    }
+    #main-image img{
+        position: absolute;
+        top: 10px;
+        right: 0;
+        height: 100px;
+    }
     .text-section, .photo, #main-image {
         grid-column: 1/3;
     }
